@@ -1,0 +1,48 @@
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.primary {
+  background-color: #ff7a00;
+  color: white;
+  border: none;
+  padding: 30px 35px;
+  text-align: left;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  text-transform: capitalize;
+  width: 70%;
+  border: #ff7a00 1px solid;
+}
+
+.primary:hover {
+  background-color: #ffff;
+  color: #ff7a00;
+}
+.secondary {
+  background-color: #f7f7f8;
+
+  border: none;
+  width: 100%;
+}
+
+.secondary:hover {
+  background-color: #000;
+  color: white;
+}
+@media screen and (max-width: 1024px) {
+  .primary {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
