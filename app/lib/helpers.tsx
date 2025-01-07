@@ -1,14 +1,13 @@
 import Image from "next/image";
 import { App } from "@app/types";
-import { StarIcon } from "@app/assets/images/icons";
-import { defaultApp } from "@app/data";
+import { StarIcon } from "@app/assets/icons";
 import Link from "next/link";
 export const renderApp = (app?: App) => {
   if (!app || !app.id) {
     return <div>Loading...</div>;
   }
 
-  const appData = { ...defaultApp, ...app };
+  const appData = { ...app };
 
   return (
     <Link key={appData.id} href={`/apps/${appData.name}`} className="position">

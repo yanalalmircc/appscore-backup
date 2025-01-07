@@ -18,10 +18,11 @@
       }
     ],
     "paths": {
+      "@/*": ["./*"],
       "@app/*": ["./app/*"],
       "@assets/*": ["./app/assets/*"],
-      "@lib/*": ["./app/lib/*"],
-      "@hooks/*": ["./app/hooks/*"],
+      "@components/*": ["./app/components/*"],
+      "@types/*": ["./app/types/*"],
       "@api/*": ["./app/api/*"]
     }
   },

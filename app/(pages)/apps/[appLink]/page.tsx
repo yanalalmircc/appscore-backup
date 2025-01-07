@@ -1,5 +1,5 @@
 import { AppCard, YouMightLike } from "@app/components";
-import { getApp } from "@app/api/getApp";
+import { getApp } from "@app/api";
 
 export const runtime = "edge";
 export default async function AppPage({
@@ -15,7 +15,7 @@ export default async function AppPage({
     return (
       <div className="content">
         <div className="container">
-          {data && <AppCard app={data} />}
+          {data && <AppCard app={data?.data?.mobileApp} />}
           <YouMightLike />
         </div>
       </div>

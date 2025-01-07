@@ -4,17 +4,19 @@ import { App } from "@app/types";
 import { Buttons } from "@app/components";
 import Link from "next/link";
 
-export const PopularApps = ({ apps }: { apps: App[] }) => {
-  const popularAppsList = apps?.slice(0, 12);
+export const PopularGames = ({ apps }: { apps: App[] }) => {
+  const popularGamesList = apps
+    ?.slice(0, 12)
+    .filter((app: App) => app.category.name === "Games");
   return (
     <section className="section">
-      <h2>Popular Apps</h2>
+      <h2>Popular Games</h2>
       <div className="positions" id="popularApps">
-        {popularAppsList?.map((app: App) => renderApp(app))}
+        {popularGamesList?.map((app: App) => renderApp(app))}
       </div>
       <Link href="/apps">
         <Buttons variant="secondary" icon={<ArrowRight className="" />}>
-          Show more apps
+          Show more games
         </Buttons>
       </Link>
     </section>

@@ -4,7 +4,7 @@ import { App } from "@app/types";
 
 export const YouMightLike = async () => {
   const data = await getApps();
-  const popularAppsList = data?.slice(0, 12);
+  const popularAppsList = data?.data?.mobileApps?.slice(0, 12);
   return (
     <div>
       <h2>{"Apps you may like"}</h2>

@@ -1,44 +1,39 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { HomeIcon, AppsIcon, GamesIcon } from "@assets/images/icons";
+import { HomeIcon, AppsIcon, GamesIcon } from "@assets/icons";
 import Link from "next/link";
-export const HeaderMenu = () => {
+export const HeaderMenu = ({
+  setIsMenuOpen,
+  isMenuOpen,
+}: {
+  setIsMenuOpen: (isMenuOpen: boolean) => void;
+  isMenuOpen: boolean;
+}) => {
   const currentPath = usePathname();
   const activeItemClass = "btn btn-text btn-text--lg active";
   const regularItemClass = "btn btn-text btn-text--lg";
   return (
-    <div className="menu">
-      <div className="menu__item">
-        <Link
-          href="/"
-          className={currentPath === "/" ? activeItemClass : regularItemClass}
-        >
-          <HomeIcon />
-          <span>Home</span>
-        </Link>
-      </div>
-      <div className="menu__item">
-        <Link
-          href="/apps"
-          className={
-            currentPath === "/apps" ? activeItemClass : regularItemClass
-          }
-        >
-          <AppsIcon />
-          <span>Apps</span>
-        </Link>
-      </div>
-      <div className="menu__item">
-        <Link
-          href="/games"
-          className={
-            currentPath === "/games" ? activeItemClass : regularItemClass
-          }
-        >
-          <GamesIcon />
-          <span>Games</span>
-        </Link>
-      </div>
+    <div className={`menu ${isMenuOpen ? "is-active" : ""}`}>
+      {menuItems.map((item) => (
+        <div className="menu__item" key={item.href}>
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href={item.href}
+            className={
+              currentPath === item.href ? activeItemClass : regularItemClass
+            }
+          >
+            {item.icon}
+            <span>{item.title}</span>
+          </Link>
+        </div>
+      ))}
     </div>
   );
 };
+
+const menuItems = [
+  { href: "/", title: "Home", icon: <HomeIcon /> },
+  { href: "/apps", title: "Apps", icon: <AppsIcon /> },
+  { href: "/games", title: "Games", icon: <GamesIcon /> },
+];

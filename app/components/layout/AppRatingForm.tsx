@@ -6,11 +6,7 @@ import { z } from "zod";
 import emailjs from "@emailjs/browser";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Buttons } from "@app/components/";
-import {
-  ArrowRight,
-  RatingStarIcon,
-  SpinnerIcon,
-} from "@app/assets/images/icons";
+import { ArrowRight, RatingStarIcon, SpinnerIcon } from "@app/assets/icons";
 
 const ratingFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),

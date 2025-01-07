@@ -1,12 +1,14 @@
-import { StaticImageData } from "next/image";
 import { FC } from "react";
+import { StaticImageData } from "next/image";
+
 export type HeroSlide = {
+  id: number;
   link: string;
   title: string;
   category: string;
   rateImage: FC;
   rate: number;
-  slideLogo: StaticImageData;
+  slideLogo: FC;
   slideImage: StaticImageData;
   backgroundColor: string;
 };

@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import Link from "next/link";
 
 export default function Privacy() {
@@ -9,12 +7,13 @@ export default function Privacy() {
         <h2>PRIVACY POLICY</h2>
         <p>Last update: 06/2024.</p>
         <p>
-          This Privacy Policy explains how appsscore.com ("Company," "us," "we,"
-          or "our") collects, processes, and protects personal information
-          provided by users ("you," "your") when accessing appsscore.com and its
-          related services and applications (collectively, the "Services"). Your
-          personal information is referred to as "Personal Data" or "Personal
-          Information."
+          This Privacy Policy explains how appsscore.com (&quot;Company,&quot;
+          &quot;us,&quot; &quot;we,&quot; or &quot;our&quot;) collects,
+          processes, and protects personal information provided by users
+          (&quot;you,&quot; &quot;your&quot;) when accessing appsscore.com and
+          its related services and applications (collectively, the
+          &quot;Services&quot;). Your personal information is referred to as
+          &quot;Personal Data&quot; or &quot;Personal Information.&quot;
         </p>
 
         <h2>1. What Personal Data We Collect</h2>
@@ -34,7 +33,7 @@ export default function Privacy() {
           or enforce our Terms of Service. We collect only the necessary
           Personal Data and retain it only for as long as needed or required by
           law. Once these purposes are fulfilled, data is deleted. To opt out of
-          marketing emails, use the "unsubscribe" link in such emails.
+          marketing emails, use the &quot;unsubscribe&quot; link in such emails.
         </p>
 
         <h2>3. Legal Grounds for Processing Personal Information</h2>
@@ -67,7 +66,7 @@ export default function Privacy() {
           We implement advanced security measures to protect your data and
           comply with GDPR. In the event of a data breach, we will notify
           affected users as required by law. The Company is not responsible for
-          third-party applications' security.
+          third-party applications&quot; security.
         </p>
 
         <h2>7. Disclosure of Personal Information</h2>

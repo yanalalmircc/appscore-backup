@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import Link from "next/link";
 
 export default function Terms() {
@@ -9,40 +7,40 @@ export default function Terms() {
         <h2>Terms of Service</h2>
         <h2>1. Access and Registration</h2>
         <p>
-          To access our platform, you may need to create an account ("Account").
-          When registering, you must provide accurate and up-to-date information
-          and safeguard your password. You are fully responsible for your
-          interactions with other users. We do not conduct background checks on
-          users, so exercise caution when sharing personal information. You can
-          update your profile at any time to ensure its accuracy. Sharing
-          contact details is at your own discretion. For more on how we handle
-          your data, refer to our Privacy Policy.
+          To access our platform, you may need to create an account
+          (&quot;Account&quot;). When registering, you must provide accurate and
+          up-to-date information and safeguard your password. You are fully
+          responsible for your interactions with other users. We do not conduct
+          background checks on users, so exercise caution when sharing personal
+          information. You can update your profile at any time to ensure its
+          accuracy. Sharing contact details is at your own discretion. For more
+          on how we handle your data, refer to our Privacy Policy.
         </p>
 
         <h2>2. Subscriptions and Billing</h2>
         <p>
-          We offer subscription plans ("Subscription") to unlock additional
-          features. Details about available plans are provided on our platform.
-          Current options include 1-day access for $1.00 and monthly
+          We offer subscription plans (&quot;Subscription&quot;) to unlock
+          additional features. Details about available plans are provided on our
+          platform. Current options include 1-day access for $1.00 and monthly
           subscriptions for $59.99. Subscriptions auto-renew monthly unless
           cancelled. Payments are processed at the end of the current billing
           period using the same payment method initially provided. Renewal
           confirms the continuation of your subscription under the original
-          terms. We’ll notify you in advance of any pricing changes. Continued
-          use after a price adjustment signifies your agreement to the new
-          terms.
+          terms. We&quot;ll notify you in advance of any pricing changes.
+          Continued use after a price adjustment signifies your agreement to the
+          new terms.
         </p>
 
         <h2>3. Cancellation and Termination</h2>
         <p>
-          You may cancel your 1-day or monthly subscription anytime via the “My
-          Account” section, the Subscription Cancellation form, or by contacting
-          Support. Refunds for partial months or unused services are not
-          available. Cancelled subscriptions remain active until the current
-          billing cycle ends. We reserve the right to terminate your account
-          without notice for breaching these Terms, with no refunds provided.
-          Upon termination, all rights under these Terms, except those intended
-          to survive, will cease.
+          You may cancel your 1-day or monthly subscription anytime via the
+          &quot;My Account&quot; section, the Subscription Cancellation form, or
+          by contacting Support. Refunds for partial months or unused services
+          are not available. Cancelled subscriptions remain active until the
+          current billing cycle ends. We reserve the right to terminate your
+          account without notice for breaching these Terms, with no refunds
+          provided. Upon termination, all rights under these Terms, except those
+          intended to survive, will cease.
         </p>
 
         <h2>4. User Obligations</h2>
@@ -59,12 +57,13 @@ export default function Terms() {
             misleading content.
           </li>
           <li>
-            Not spam, promote unauthorized materials, or infringe on others'
-            privacy. You confirm you are at least 18 years old and legally
-            permitted to agree to these Terms. Accounts are non-transferable,
-            and you are responsible for any breaches. You agree to indemnify the
-            Company against claims or damages, including legal fees, arising
-            from violations of these Terms or third-party rights.
+            Not spam, promote unauthorized materials, or infringe on
+            others&quot; privacy. You confirm you are at least 18 years old and
+            legally permitted to agree to these Terms. Accounts are
+            non-transferable, and you are responsible for any breaches. You
+            agree to indemnify the Company against claims or damages, including
+            legal fees, arising from violations of these Terms or third-party
+            rights.
           </li>
         </ul>
 
@@ -73,7 +72,7 @@ export default function Terms() {
           Users may submit content such as suggestions or questions, provided it
           does not violate any laws or infringe on rights. We reserve the right
           to remove inappropriate content. Content submitted to our email
-          becomes the Company’s property. Our platform may include links to
+          becomes the Company&quot;s property. Our platform may include links to
           third-party websites, but we do not endorse or take responsibility for
           their content or practices. Use external links at your own risk and
           review their policies.
@@ -81,10 +80,10 @@ export default function Terms() {
 
         <h2>6. Responsibilities</h2>
         <p>
-          Our platform is provided “as is,” without warranties of any kind. We
-          do not guarantee uninterrupted or error-free services. Users are
-          responsible for their safety and the content they share. Misconduct
-          can be reported to{" "}
+          Our platform is provided &quot;as is,&quot; without warranties of any
+          kind. We do not guarantee uninterrupted or error-free services. Users
+          are responsible for their safety and the content they share.
+          Misconduct can be reported to{" "}
           <Link href="mailto:help@appsscore.com">
             <b>help@appsscore.com</b>
           </Link>

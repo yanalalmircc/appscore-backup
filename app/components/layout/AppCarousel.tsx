@@ -2,7 +2,7 @@
 import { App, ImageType } from "@app/types";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
-import { PrevIcon, NextIcon } from "@app/assets/images/icons";
+import { PrevIcon, NextIcon } from "@app/assets/icons";
 import Link from "next/link";
 
 export const AppCarousel = ({ app }: { app: App }) => {

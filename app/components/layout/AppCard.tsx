@@ -6,7 +6,7 @@ import {
   AppRatingForm,
   Buttons,
 } from "@app/components";
-import { AndroidIcon, ArrowDownIcon, IOSIcon } from "@app/assets/images/icons";
+import { AndroidIcon, ArrowDownIcon, IOSIcon } from "@app/assets/icons";
 export const AppCard = ({ app }: { app: App }) => {
   return (
     <div className="single">
@@ -43,22 +43,26 @@ export const AppCard = ({ app }: { app: App }) => {
         <div className="downloads" id="downloads">
           <h2>Download app</h2>
           <div className="downloads__btns">
-            <a
-              href={app.linkAndroid}
-              className="btn btn-black btn--large"
-              target="_blank"
-            >
-              <AndroidIcon className="mr-2" />
-              <span>Download from Google Play</span>
-            </a>
-            <a
-              href={app.linkIos}
-              className="btn btn-black btn--large"
-              target="_blank"
-            >
-              <IOSIcon className="mr-2" />
-              <span>Download from AppStore</span>
-            </a>
+            {app.linkAndroid && (
+              <a
+                href={app.linkAndroid}
+                className="btn btn-black btn--large"
+                target="_blank"
+              >
+                <AndroidIcon className="mr-2" />
+                <span>Download from Google Play</span>
+              </a>
+            )}
+            {app.linkIos && (
+              <a
+                href={app.linkIos}
+                className="btn btn-black btn--large"
+                target="_blank"
+              >
+                <IOSIcon className="mr-2" />
+                <span>Download from AppStore</span>
+              </a>
+            )}
           </div>
         </div>
       </div>

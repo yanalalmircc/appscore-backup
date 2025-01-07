@@ -1,16 +1,13 @@
-import { getApps } from "@app/api";
 import { renderApp } from "@app/lib/helpers";
 import { Buttons } from "@app/components";
 import Link from "next/link";
+import { App } from "@app/types";
 
-export const TopFive = async () => {
-  const data = await getApps();
-
-  // Filter the data based on category
-  const topGamesList = data
+export const TopFive = async ({ apps }: { apps: App[] }) => {
+  const topGamesList = apps
     .filter((item) => item.category.name === "Games")
     .slice(0, 5);
-  const topAppsList = data
+  const topAppsList = apps
     .filter((item) => item.category.name !== "Games")
     .slice(0, 5);
 

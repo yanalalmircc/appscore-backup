@@ -1,9 +1,6 @@
-import { renderApp } from "@app/lib/helpers";
-import { getApps } from "@app/api";
 import { App } from "@app/types";
-
-export const AllAppsList = async () => {
-  const apps = await getApps();
+import { renderApp } from "@app/lib/helpers";
+export const AllAppsList = ({ apps }: { apps: App[] }) => {
   return (
     <div className="positions" id="popularApps">
       {apps.map((app: App) => renderApp(app))}
