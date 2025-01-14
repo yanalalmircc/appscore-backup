@@ -22,6 +22,7 @@ export async function getApp(name?: string) {
       }
     );
     const data = await res.json();
+    // comment
     return data;
   } catch (error) {
     console.error("Error fetching apps:", error);
